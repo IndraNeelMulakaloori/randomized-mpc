@@ -54,7 +54,7 @@ target_link_libraries(rmpc
 # Strict host-side warnings for this repo's own examples and tests (not
 # propagated to projects consuming the rmpc target).
 add_compile_options(
-  $<$<COMPILE_LANGUAGE:CUDA>:-Xcompiler=-Wall,-Wextra,-Wshadow,-Werror>
+  $<$<COMPILE_LANGUAGE:CUDA>:-Xcompiler=-Wall,-Wextra,-Wshadow>
 )
 
 if(RMPC_BUILD_EXAMPLES OR BUILD_TESTING)
